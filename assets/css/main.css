@@ -818,15 +818,22 @@ nav.navbar .nav-content .extra .nav-trigger {
   color: #fff;
 }
 @media (max-width: 768px) {
+  .main .landingpage {
+    gap: 2rem;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
   .main .landingpage .text-content {
     bottom: 10%;
     width: 100%;
-    padding: 1rem;
+    padding: 0rem;
     gap: 1.5rem;
   }
   .main .landingpage .text-content h1 {
     width: 100%;
-    font-size: 51.8px;
+    font-size: 35px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -838,32 +845,13 @@ nav.navbar .nav-content .extra .nav-trigger {
         -ms-flex-align: start;
             align-items: flex-start;
   }
-  .main .landingpage .text-content h1 span:nth-child(2) {
-    -ms-flex-item-align: center;
-        align-self: center;
-  }
-  .main .landingpage .text-content h1 span:nth-child(3) {
-    -ms-flex-item-align: end;
-        align-self: flex-end;
-  }
-  .main .landingpage .text-content .tags {
-    width: 100%;
-    gap: 0;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-  }
-  .main .landingpage .text-content .tags span {
-    font-size: 12.6px;
-    text-underline-offset: 0.25rem;
-    padding: 0.5rem 0;
-  }
   .main .landingpage .text-content .action-btns {
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
     width: 100%;
   }
-  .main .landingpage .text-content .action-btns a.btn {
-    font-size: 14px;
+  .main .landingpage img {
+    width: 100%;
   }
 }/*# sourceMappingURL=main.css.map */

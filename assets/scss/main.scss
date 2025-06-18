@@ -599,49 +599,33 @@ nav.navbar{
 
 
         @media (max-width: $breakpoint-mobile) {
-            
-            
+            gap: 2rem;
+            flex-direction: column;
             .text-content{
                 bottom: 10%;
                 width: 100%;                
-                padding: 1rem;
+                padding: 0rem;
                 
                 gap: 1.5rem;
+                
                 h1{
                     width: 100%;
-                    font-size: $base-font-size * 3.7;
+                    font-size: $base-font-size * 2.5;
                     display: flex;
                     flex-direction: column;
                     align-items: flex-start;
-                    span{
-                        &:nth-child(2){
-                            align-self: center;
-                        }
-                        &:nth-child(3){
-                            align-self: flex-end;
-                        }
-                        
-                    }
-                }
-                .tags{
-                    width: 100%;
-                    gap: 0;
                     
-                    justify-content: space-between;
-                    span{
-                        font-size: $base-font-size * .9;
-                        
-                        text-underline-offset: .25rem;
-                        padding: .5rem 0;
-                    }
                 }
+                
                 .action-btns{
-                    justify-content: space-around;
+                    justify-content: flex-start;
                     width: 100%;
-                    a.btn{
-                        font-size: $base-font-size * 1;
-                    }
+                   
                 }
+            }
+            img{
+                width: 100%;
+                
             }
         }
     }
