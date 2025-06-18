@@ -37,7 +37,6 @@ nav.navbar {
   display: -ms-flexbox;
   display: flex;
   height: 110px;
-  position: absolute;
   top: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -238,6 +237,7 @@ nav.navbar .nav-content .extra a.stories-btn {
   -webkit-transition: 0.4s ease;
   transition: 0.4s ease;
   color: #113B09;
+  padding: 0 8px;
 }
 @media (min-width: 1200px) {
   nav.navbar .nav-content .extra a.stories-btn {
@@ -591,4 +591,279 @@ nav.navbar .nav-content .extra .nav-trigger {
   display: flex;
   gap: 1rem;
   padding: 0.5rem 0;
+}
+
+.main {
+  width: 100%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  overflow-x: hidden;
+  position: relative;
+  padding: 0;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  /* Scrollbar styles */
+}
+.main::-webkit-scrollbar {
+  width: 12px; /* Width of the scrollbar */
+}
+.main::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Background of the track (scroll area) */
+}
+.main::-webkit-scrollbar-thumb {
+  background-color: #888; /* Scrollbar thumb (the actual bar) */
+  border-radius: 10px; /* Roundness of the scrollbar */
+  border: 3px solid #f1f1f1; /* Padding around the thumb */
+}
+.main::-webkit-scrollbar-thumb:hover {
+  background-color: #555; /* Darker color when hovering over the scrollbar */
+}
+.main .landingpage {
+  width: 100%;
+  min-height: 60vh;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin-bottom: 2rem;
+  position: relative;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding: 21px;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.main .landingpage img {
+  width: 50%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  background-position: center;
+  z-index: -1;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  top: 0;
+}
+.main .landingpage .text-content {
+  width: 50%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding: 21px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 1.5rem;
+}
+.main .landingpage .text-content h1 {
+  color: #fff;
+  font-size: 42px;
+  line-height: 56px;
+  font-weight: 500;
+  word-spacing: 0.1cm;
+  color: #000000;
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+}
+.main .landingpage .text-content p {
+  color: #44464F;
+  font-size: 14px;
+  font-weight: normal;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+.main .landingpage .text-content .action-btns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 21px;
+  width: 100%;
+}
+.main .landingpage .text-content .action-btns a.donate-btn {
+  padding: 0 6px;
+  color: #000000;
+  background-color: #fff;
+  text-decoration: none;
+  text-transform: capitalize;
+  font-weight: 500;
+  text-align: center;
+  line-height: 40px;
+  text-wrap: nowrap;
+  border-radius: 3px;
+  font-size: 14px;
+  min-width: 8rem;
+  background: #CCDC70;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-item-align: center;
+      align-self: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  gap: 0.5rem;
+  -webkit-transition: 0.4s ease;
+  transition: 0.4s ease;
+  border-radius: 5px;
+  position: relative;
+  border: 1px solid #CCDC70;
+  line-height: 45px;
+}
+@media (min-width: 1200px) {
+  .main .landingpage .text-content .action-btns a.donate-btn {
+    font-size: 13.16px;
+  }
+}
+.main .landingpage .text-content .action-btns a.donate-btn span {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-left: 5px;
+  justify-self: flex-start;
+  -ms-flex-item-align: start;
+      align-self: start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+.main .landingpage .text-content .action-btns a.donate-btn:hover {
+  -webkit-transition: 0.4s ease;
+  transition: 0.4s ease;
+  background: #113B09;
+  color: #fff;
+  border: 1px solid #113B09;
+}
+.main .landingpage .text-content .action-btns a.donate-btn i.bx {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 50%;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  position: absolute;
+  font-size: 30px;
+}
+.main .landingpage .text-content .action-btns a.contact-btn {
+  padding: 0 6px;
+  color: #000000;
+  background-color: #fff;
+  text-decoration: none;
+  text-transform: capitalize;
+  font-weight: 500;
+  text-align: center;
+  line-height: 40px;
+  text-wrap: nowrap;
+  border-radius: 3px;
+  font-size: 14px;
+  background: transparent;
+  min-width: 8rem;
+  border: 1px solid #113B09;
+  border-radius: 5px;
+  -webkit-transition: 0.4s ease;
+  transition: 0.4s ease;
+  color: #113B09;
+  line-height: 45px;
+  padding: 0 8px;
+}
+@media (min-width: 1200px) {
+  .main .landingpage .text-content .action-btns a.contact-btn {
+    font-size: 13.16px;
+  }
+}
+.main .landingpage .text-content .action-btns a.contact-btn:hover {
+  -webkit-transition: 0.4s ease;
+  transition: 0.4s ease;
+  background: #113B09;
+  color: #fff;
+}
+@media (max-width: 768px) {
+  .main .landingpage .text-content {
+    bottom: 10%;
+    width: 100%;
+    padding: 1rem;
+    gap: 1.5rem;
+  }
+  .main .landingpage .text-content h1 {
+    width: 100%;
+    font-size: 51.8px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .main .landingpage .text-content h1 span:nth-child(2) {
+    -ms-flex-item-align: center;
+        align-self: center;
+  }
+  .main .landingpage .text-content h1 span:nth-child(3) {
+    -ms-flex-item-align: end;
+        align-self: flex-end;
+  }
+  .main .landingpage .text-content .tags {
+    width: 100%;
+    gap: 0;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .main .landingpage .text-content .tags span {
+    font-size: 12.6px;
+    text-underline-offset: 0.25rem;
+    padding: 0.5rem 0;
+  }
+  .main .landingpage .text-content .action-btns {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    width: 100%;
+  }
+  .main .landingpage .text-content .action-btns a.btn {
+    font-size: 14px;
+  }
 }/*# sourceMappingURL=main.css.map */
